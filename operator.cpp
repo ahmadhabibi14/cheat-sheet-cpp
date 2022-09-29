@@ -19,5 +19,8 @@ int main () {
 
   cout << luas << endl;
 
+  luas = luas / 4;
+  cout << luas << endl;
+
   return 0;
 }
