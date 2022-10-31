@@ -13,6 +13,7 @@ void tampilanSambutan() {
     cout << "=> 3> Cek Saldo                                    <=" << endl;
     cout << "=> 4> Transfer                                     <=" << endl;
     cout << "=> 5> Keluar                                       <=" << endl;
+    cout << "=> 6> Tabung                                       <=" << endl;
     cout << "=>                                                 <=" << endl;
     cout << "=====================================================" << endl;
 }
@@ -22,6 +23,7 @@ int main() {
     int sisa;
     int saldo;
     int menu;
+    int nominal;
 
     login: // label login
     cout << "Masukkan PIN : " << endl;
@@ -41,6 +43,18 @@ int main() {
                 cout << "Saldo anda kurang" << endl;
                 goto menu;
             }
+
+            goto menu;
+        } else if (menu == 3) {
+            cout << "SALDO ANDA ADALAH " << saldo << endl;
+            system("clear");
+            goto menu;
+        } else if (menu == 6) {
+            cout << "Silahkan masukkan nominal yang akan di tabung :" << endl;
+            cin >> nominal;
+            saldo = saldo + nominal;
+
+            cout << "Selesai di tabung !!!" << endl;
 
             goto menu;
         } else if (menu == 5) {
