@@ -2,21 +2,21 @@
 #include <string>
 using namespace std;
 
-void tampilanSambutan() {
-    cout << "=====================================================" << endl;
-    cout << "=>        Selamat datang di Mesin ATM HBBIIIII     <=" << endl;
-    cout << "=====================================================" << endl;
-    cout << "=>                                                 <=" << endl;
-    cout << "=> Silahkan pilih menu berikut >                   <=" << endl;
-    cout << "=> 1> Tarik Rp100.000                              <=" << endl;
-    cout << "=> 2> Tarik Rp500.000                              <=" << endl;
-    cout << "=> 3> Cek Saldo                                    <=" << endl;
-    cout << "=> 4> Transfer                                     <=" << endl;
-    cout << "=> 5> Keluar                                       <=" << endl;
-    cout << "=> 6> Tabung                                       <=" << endl;
-    cout << "=>                                                 <=" << endl;
-    cout << "=====================================================" << endl;
-}
+// void tampilanSambutan() {
+//     cout << "=====================================================" << endl;
+//     cout << "=>        Selamat datang di Mesin ATM HBBIIIII     <=" << endl;
+//     cout << "=====================================================" << endl;
+//     cout << "=>                                                 <=" << endl;
+//     cout << "=> Silahkan pilih menu berikut >                   <=" << endl;
+//     cout << "=> 1> Tarik Rp100.000                              <=" << endl;
+//     cout << "=> 2> Tarik Rp500.000                              <=" << endl;
+//     cout << "=> 3> Cek Saldo                                    <=" << endl;
+//     cout << "=> 4> Transfer                                     <=" << endl;
+//     cout << "=> 5> Keluar                                       <=" << endl;
+//     cout << "=> 6> Tabung                                       <=" << endl;
+//     cout << "=>                                                 <=" << endl;
+//     cout << "=====================================================" << endl;
+// }
 
 int main() {
     string pin;
@@ -31,7 +31,19 @@ int main() {
 
     if (pin == "123456") {
         saldo = 5000000;
-        tampilanSambutan();
+        cout << "=====================================================" << endl;
+        cout << "=>        Selamat datang di Mesin ATM HBBIIIII     <=" << endl;
+        cout << "=====================================================" << endl;
+        cout << "=>                                                 <=" << endl;
+        cout << "=> Silahkan pilih menu berikut >                   <=" << endl;
+        cout << "=> 1> Tarik Rp100.000                              <=" << endl;
+        cout << "=> 2> Tarik Rp500.000                              <=" << endl;
+        cout << "=> 3> Cek Saldo                                    <=" << endl;
+        cout << "=> 4> Transfer                                     <=" << endl;
+        cout << "=> 5> Keluar                                       <=" << endl;
+        cout << "=> 6> Tabung                                       <=" << endl;
+        cout << "=>                                                 <=" << endl;
+        cout << "=====================================================" << endl;
         menu: // Label menu
         cin >> menu;
         if (menu == 1) {

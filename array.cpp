@@ -23,9 +23,11 @@ int main() {
         "Nusantara",
         "Habibi"
     };
+    int arrayOfInts[5] = {10,20}; // means 10, 20, 0, 0, 0
 
     // Tampilkan array di length 3
     cout << habibi[3] << endl;
+    cout << arrayOfInts[] << endl;
 
     return 0;
 }
